@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: cursive;
+    background: #f7f7f7;
+    padding: 20px;
+    background-image: url("photo2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 1.2rem;
+    color: #003049;
+}
+h2{
+    text-align: center;
+    margin-bottom:15px;
+    color:#335c67;
+}
+
+h1 {
+    text-align :center;
+    color:#0353a4;
+    margin-bottom: 20px;
+}
+
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+
+.left {
+    width: 70%;
+}
+
+.right {
+    width: 15%;
+}
+
+
+
+.box {
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    transition : transform 0.3s ease;
+}
+
+.about{
+    
+    border: 2px solid red;
+}
+
+.project {
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 10px;
+    border: 2px solid yellow;
+}
+
+.social{
+    display: flex;
+    justify-content: space-around;
+    transition : transform 0.3s ease;
+    border: 4px solid #588157;
+    
+}
+.box:hover
+{
+    transform: translateY(-5px);
+}
+
+.photo-box {
+    background: #001233 ;
+    padding: 5px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.photo-box img {
+    width: 100%;
+    border-radius: 10px;
+    transition:transform 0.5s ease;
+}
+.photo-box img:hover {
+    transform : scale(1.1);
+}
+
+
+.social a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+    transition : transform 0.5s ease;
+}
+.social a:hover {
+    transform : scale(1.1);
+}
+
+html {
+    scroll-behavior: smooth;
+}

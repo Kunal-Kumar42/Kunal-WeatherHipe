@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+          integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo"><a href="#"><i class="fa-solid fa-fingerprint"></i></a><span> Me </span></div>
+            <div class="home"><a href="#intro"><i class="fa-solid fa-house"></i></a><span> Home </span></div>
+            <div class="searches"><a href="#search"> Search </a></div>
+            <div class="weather"><a href="#weather-section"> Weather </a></div>
+            <div class="about"><a href="about.html"> About </a></div>
+            <div class="unit">
+                <select id="unit-select">
+                <option value="cel" selected> °C</option>
+                <option value="fah"> °F</option>
+                <option value="kelvin"> K</option>
+                </select>
+            </div>
+            <div class="signin">
+                <button><a href="#"> Sign in </a></button>
+            </div>
+        </div>
+
+
+        <div class="header_h">
+
+            <div class="logo"> <a href="#"><i class="fa-solid fa-fingerprint"></i></a> <span> Me </span></div>
+            <div class="hamburger" id="hamburger"><i class="fa-solid fa-bars"></i></div>
+            <div class="nav-links" id="navLinks">
+            <div class="home"><a href="#intro">Home</a></div>
+            <div class="searches"><a href="#search">Search</a></div>
+            <div class="weather"><a href="#weather-section">Weather</a></div>
+            <div class="about"><a href="about.html">About</a></div>
+
+            <div class="unit">
+                <select id="unit-select">
+                    <option value="cel" selected>°C</option>
+                    <option value="fah">°F</option>
+                    <option value="kelvin">K</option>
+                </select>
+            </div>
+            
+
+            <div class="signin">
+                <button><a href="#">Sign in</a></button>
+            </div>
+            </div>
+        </div>
+
+
+    </header>
+    
+    <main>
+        <div class="intro" id="intro">
+        <h1>Welcome to WeatherHipe</h1>
+        <p>Your real-time weather forecast built with style and compassion. </p>
+        </div>
+
+        <div class="search" id="search">
+            <input class="takeinput" type="search" placeholder="Enter a city name">
+            <i class="fa-solid fa-magnifying-glass searchicon"></i>
+        </div>
+
+        <div id="weather-section">
+
+            <div id="weather-top">
+                <h2 id="city-title">City Name</h2>
+                <p id="current-date">Date here</p>
+            </div>
+
+            <div id="weather-body">
+                <div id="left-box">
+                    <div id="icon-box">☁️</div>
+                    <div id="temp-box">25°C</div>
+                    <div id="desc-box">Cloudy</div>
+                </div>
+
+                <div id="right-box">
+                    <p id="hum-box">Humidity: --%</p>
+                    <p id="wind-box">Wind: -- kmph</p>
+                    <p id="press-box">Pressure: -- mb</p>
+                </div>
+            </div>
+        </div>
+
+        <p id="error-msg"></p>
+    </main>
+
+    <footer class="weather-footer">
+    <div class="footer-container">
+
+        <div class="footer-block">
+            <h3>PROJECT</h3>
+            <p>Weather Forecast App</p>
+            <p>About This Project</p>
+            <p>How It Works</p>
+            <p>Data Sources (API)</p>
+            <p>Contact Developer</p>
+        </div>
+
+        <div class="footer-block">
+            <h3>FEATURES</h3>
+            <p>Live Temperature</p>
+            <p>Humidity & Wind</p>
+            <p>Air Quality</p>
+            <p>7-Day Forecast</p>
+            <p>Weather Alerts</p>
+        </div>
+
+        <div class="footer-block">
+            <h3>APPS & TOOLS</h3>
+            <p>Android App (Coming Soon)</p>
+            <p>iOS App (Coming Soon)</p>
+            <p>Radar Map</p>
+            <p>Satellite View</p>
+        </div>
+
+        <div class="footer-block">
+            <h3>MORE</h3>
+            <p>Climate News</p>
+            <p>Rain Prediction</p>
+            <p>Storm Tracking</p>
+            <p>UV Index</p>
+            <p>Sunrise & Sunset</p>
+        </div>
+
+    </div>
+
+
+    <p class="copyright">Weather Forecast © 2025</p>
+
+    <p class="madeby">MADE WITH ❤️ BY <span>KUNAL KUMAR</span></p>
+    </footer>
+
+
+
+<div class="overlay" id="overlay"></div>
+
+<div class="popup" id="loginPopup">
+    <h2>Sign In</h2>
+    <input type="text" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <button id="loginBtn" class="submit-btn">Login</button>
+    <p>Don't have an account? <br><span id="switchToSignup">Sign Up</span></p>
+</div>
+
+<div class="popup" id="signupPopup">
+    <h2>Sign Up</h2>
+    <input type="text" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <button id="signupBtn" class="submit-btn">Create Account</button>
+    <p>Already have an account? <br><span id="switchToLogin">Sign In</span></p>
+</div>
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
