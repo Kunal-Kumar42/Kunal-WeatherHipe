@@ -294,13 +294,17 @@ footer{
     .header .weather {
         margin : 0 5px;
     }
+    html{
+        font-size: 2rem;
+    }
 }
 
-@media (max-width : 800px){
+@media (max-width : 900px){
     .search{
         height:7vh;
         padding-top: 2vh;
-        top:12vh
+        top:12vh;
+        background-color: rgba(255,255,25,0);
     }
     .takeinput{
         padding:10px;
@@ -309,8 +313,7 @@ footer{
         padding:1vh 0.8vh;    
     }
     #weather-section {
-        margin : 40% auto;
+        margin : 30% auto;
     }
 
 }
-
