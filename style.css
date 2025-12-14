@@ -318,10 +318,11 @@ footer{
         padding:1vh 0.8vh;    
     }
     #weather-section {
-        margin : 30% auto;
+        margin : 35% auto;
         width:90%;
         margin-left: 5%;
     }
+    
     .intro{
         text-align: center;
     }
