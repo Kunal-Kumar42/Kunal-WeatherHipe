@@ -297,6 +297,9 @@ footer{
     html{
         font-size: 2rem;
     }
+    .search{
+        background-color: rgba(255,255,25,0);
+    }
 }
 
 @media (max-width : 900px){
